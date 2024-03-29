@@ -5,18 +5,35 @@ class Luminaire : Eclairage {
     val ampoule4 = AmpouleIncandescente()
     constructor()
     override fun allumer() {
-        TODO("Not yet implemented")
+        this.ampoule1.allumer()
+        this.ampoule2.allumer()
+        this.ampoule3.allumer()
+        this.ampoule4.allumer()
+
     }
     override fun eteindre() {
-        TODO("Not yet implemented")
+        this.ampoule1.eteindre()
+        this.ampoule2.eteindre()
+        this.ampoule3.eteindre()
+        this.ampoule4.eteindre()
     }
     override fun intensifier() {
-        TODO("Not yet implemented")
+        this.ampoule1.intensifier()
+        this.ampoule2.intensifier()
+        this.ampoule3.intensifier()
+        this.ampoule4.intensifier()
     }
     override fun diminuer() {
-        TODO("Not yet implemented")
+        this.ampoule1.diminuer()
+        this.ampoule2.diminuer()
+        this.ampoule3.diminuer()
+        this.ampoule4.diminuer()
     }
     override fun etat(): Int {
-        TODO("Not yet implemented")
+        this.ampoule1.etat()
+        this.ampoule2.etat()
+        this.ampoule3.etat()
+        this.ampoule4.etat()
+
     }
 }
