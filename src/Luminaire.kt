@@ -30,10 +30,15 @@ class Luminaire : Eclairage {
         this.ampoule4.diminuer()
     }
     override fun etat(): Int {
-        this.ampoule1.etat()
-        this.ampoule2.etat()
-        this.ampoule3.etat()
-        this.ampoule4.etat()
+        var etat = 0
+        if (ampoule1.etat == -1 && ampoule2.etat == -1 && ampoule3.etat == -1 && ampoule4.etat == -1){
+            return -1
+        }  else {
+            return etat
+        }
+    }
 
+    override fun toString(): String {
+        return "Etat: ampoule1 :${ampoule1.etat} , ampoule 2 :${ampoule2.etat}, ampoule 3 :${ampoule3.etat}, ampoule 4 :${ampoule4.etat}"
     }
 }
